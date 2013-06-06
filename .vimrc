@@ -36,11 +36,16 @@ set expandtab
 
 set listchars=tab:▸\ ,eol:¬,trail:.
 
-nmap <leader>l :set list!<CR> "Shortcut to rapidly toggle `set list`
-
 
 " ================ Syntax highlighting ======================
 
 syntax on
 
 autocmd BufNewFile,BufRead *.json set ft=javascript "Turn on syntax highlighting for json
+
+
+" ================ Change key mappings ======================
+
+nmap <leader>l :set list!<CR> "Shortcut to rapidly toggle `set list`
+
+:imap jj <Esc>                "Use jj to get out of insert mode
