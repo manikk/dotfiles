@@ -39,6 +39,7 @@ set listchars=tab:▸\ ,eol:¬,trail:.
 
 " ================ Syntax highlighting ======================
 
+filetype on
 syntax on
 
 autocmd BufNewFile,BufRead *.json set ft=javascript "Turn on syntax highlighting for json
