@@ -3,6 +3,22 @@
 
 set nocompatible
 
+" ====================== Vundle ==============
+
+filetype off "required!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+ 
+Bundle 'gmarik/vundle'            "required!  let Vundle manage Vundle
+Bundle 'scrooloose/nerdtree'      "NERDTree
+Bundle 'flazz/vim-colorschemes'   "Color Schemes
+Bundle "tpope/vim-surround"       "Surrond Plugin
+
+
+" ================ NERDTree =========================
+
+map <C-n> :NERDTreeToggle<CR> "Map Ctrl+n to NERDTree Toggle Command
+
 
 " ================ General Config ====================
 
@@ -12,6 +28,8 @@ set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
+set number                      "Show Line numbers
+
 
 
 " ================ Turn Off Swap Files ==============
@@ -26,9 +44,9 @@ set nowb
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set expandtab
 
 
