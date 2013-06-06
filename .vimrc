@@ -13,8 +13,6 @@ set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
 
-syntax on                       "Turn on syntax highlighting
-
 
 " ================ Turn Off Swap Files ==============
 
@@ -33,8 +31,16 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
+
 " ================ Show invisible characters ======================
 
 set listchars=tab:▸\ ,eol:¬,trail:.
 
 nmap <leader>l :set list!<CR> "Shortcut to rapidly toggle `set list`
+
+
+" ================ Syntax highlighting ======================
+
+syntax on
+
+autocmd BufNewFile,BufRead *.json set ft=javascript "Turn on syntax highlighting for json
