@@ -13,16 +13,21 @@ Bundle 'gmarik/vundle'            "required!  let Vundle manage Vundle
 Bundle 'scrooloose/nerdtree'      "NERDTree
 Bundle 'flazz/vim-colorschemes'   "Color Schemes
 Bundle "tpope/vim-surround"       "Surrond Plugin
+Bundle "nrocco/vim-phplint"       "PHP Lint
+
 
 
 " ================ NERDTree =========================
 
 map <C-n> :NERDTreeToggle<CR> "Map Ctrl+n to NERDTree Toggle Command
 
+" ================ PHPLint =========================
+noremap <C-l> :Phplint<CR></CR>
+
 
 " ================ General Config ====================
 
-set relativenumber              "Faster vim commands, with relative line numbers
+"set relativenumber              "Faster vim commands, with relative line numbers
 set ruler                       "Show row, column in status-bar
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
